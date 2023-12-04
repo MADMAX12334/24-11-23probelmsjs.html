@@ -207,5 +207,87 @@ for(i=name.length-1;i>=0;i--){
 }
 console.log(count)
 }
-revStr("ganesh")
+revStr("virat kohli")
+//counterjs
+
+var a=["hello","hello","hi","bye","hello","hi","hello1"]
+
+
+var i=0
+while(i<a.length){
+    
+    var count=0
+    var b=[]
+    for(j=0;j<a.length;j++){
+        if(a[i]==a[j]){
+            count=count+1
+        }
+        else{
+            b.push(a[j])
+        }
+    }
+    console.log(a[i]+" : "+count+" times")
+    a=b
+}
+//even
+let a=["hello","ooook"]
+
+var b=[]
+var temp=""
+for(i=0;i<a.length;i++){
+ temp=""
+ for(j=0;j<a[i].length;j++){
+     if(j%2==0){
+         temp=temp+a[i][j]   }
+ }
+    b.push(temp)
+}
+console.log(b)
+//odd
+let a=["ehllo","oook",2,3,4]
+
+a.splice(2,2,"hello123","kiran")
+
+console.log(a)
+
+let b=["ehllo","oook",2,3,4]
+
+b.splice(1,0,2345,987)
+
+console.log(b)
+
+
+let c=["ehllo","oook",2,3,4]
+
+console.log(c)
+//gretestvjs
+let a=["hello",1,2,"bye",4,5]
+let b=[]
+for(i=0;i<a.length;i++){
+    if(i%2!=0){
+      b.push(a[i])
+    }
+    
+}
+console.log(b)
+//odd
+let a=["hello",1,2,"bye",4,5]
+let b=[]
+for(i=0;i<a.length;i++){
+    if(i%2!=0){
+      b.push(a[i])
+    }
+    
+}
+//slice using array
+console.log(b)
+let a=["hello","ooook"]
+
+var b=[]
+for(i=0;i<a.length;i++){
+ 
+ b.push(a[i].slice(1,3))
+    
+}
+console.log(b)
 </script>
