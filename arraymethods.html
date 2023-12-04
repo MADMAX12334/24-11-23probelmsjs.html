@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    //anagaram
+    function anagram(a,b){
+    var count=0
+    var temp=""
+    if(a.length==b.length){
+        for(i=0;i<a.length;i++){
+         
+            for(j=0;j<a.length;j++){
+                if(a[i]==b[j]){
+                    count=count+1
+                    break;
+                    } 
+            }
+        }
+        if(count==a.length){
+            console.log("It's a Anagram")
+        }
+        else{
+            console.log("Not Anagram")
+        }
+    }
+    else{
+        console.log("Not a Anagram")
+    }
+    
+    }
+    anagram("care","race")
+
+    //capatalised frist words
+    function CFl(a){
+
+
+var count="";
+
+for(i=0;i<a.length;i++){
+    if(a[i-1]==undefined){
+        count=count+a[i].toUpperCase()
+        i++
+    }
+    if(a[i-1]==" "){
+        count=count+a[i].toUpperCase()
+        
+    }
+  
+    
+    else{
+        count=count+a[i]
+    }
+}
+console.log(count)
+}
+CFl("my name is santhosh")
+
+//Pallindrome Checker
+
+function Pallindrome(name){
+var count=0;
+
+for(i=0;i<name.length;i++){
+    if(name[i]==name[name.length-1]){
+        count=count+1
+    }
+}
+
+if(count==name.length){
+    console.log("It is a Pallindrome")
+}
+else{
+    console.log("Not a Pallindrome")
+}
+}
+Pallindrome("santhosh")
+//counting Vowels and Consonants
+
+function vandC(a){
+    var vowelcount=0;
+    var consonantcount=0;
+    for(i=0;i<a.length;i++){
+        if(a[i]=="a"||a[i]=="e"||a[i]=="i"||a[i]=="o"||a[i]=="u"){
+            vowelcount=vowelcount+1;
+            
+        }
+        else{
+            consonantcount=consonantcount+1
+        }
+    }
+    console.log("Vowels : "+vowelcount)
+    console.log("Consonants : "+consonantcount)
+    
+}
+vandC("hello world")
+ function CFl(a){
+
+
+    var count="";
+    
+    for(i=0;i<a.length;i++){
+        if(a[i-1]==undefined){
+            count=count+a[i].toUpperCase()
+            i++
+        }
+        if(a[i-1]==" "){
+            count=count+a[i].toUpperCase()
+            
+        }
+      
+        
+        else{
+            count=count+a[i]
+        }
+    }
+    console.log(count)
+    }
+    CFl("my self santhosh patil")
+ function longestword(a,b){
+
+    var c=a.split(" ")
+    var d=b.split(" ")
+    
+    if(c.length==d.length){
+        console.log("First Sentence has longest words")
+    }
+    else if(c.length>d.length){
+        console.log("First Sentence has longest words")
+    }
+    else{
+            console.log("Second Sentence has longest words")
+    }
+    }
+    longestword("the quick brown fox jumps over the lazy dog","the quick brown fox jumps over the lazy dog again")
+ var a="aaebcccfccaaadde"
+var b=""
+
+
+var i=0
+while(i!=a.length){
+      b=b+a[i]
+    a=a.replaceAll(a[i],"")
+  
+}
+console.log(b)
+ function Stringcompression(a){
+
+var temp="";
+var result=""
+
+for(i=0;i<a.length;i++){
+    temp=a[i]
+     var count=1;
+    for(j=i+1;j<a.length;j++){
+       
+        if(temp==a[j]){
+            count=count+1
+            i++
+        }
+        else{
+            break;
+        }
+ 
+    } result=result+temp+count
+    
+    
+}
+console.log(result)
+}
+Stringcompression("aabcccccaaa")
+ function rotationstring(a,b){
+    var count=0
+    a=a.split("")
+    b=b.split("")
+    a=a.sort()
+    b=b.sort()
+    if(a.length==b.length){
+   for(i=0;i<a.length;i++){
+       if(a[i]==b[i]){
+           count=count+1
+       }
+   
+   }
+   if(count==a.length){
+       console.log("true")
+   }
+       else{
+           console.log(false)
+       }
+    }
+    else{
+        console.log(false)
+    }
+}
+rotationstring('waterbottlee', 'lewaterbotte')
+ //Reverse String
+
+function revStr(name){
+var count="";
+for(i=name.length-1;i>=0;i--){
+    count=count+name[i]
+}
+console.log(count)
+}
+revStr("ganesh")
+</script>
